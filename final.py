@@ -14,8 +14,6 @@ def index():
     filename = 'request for startup.csv'
     data = pandas.read_csv(filename, header=0)
     info = data.values.flatten()
-    for line in info:
-        print(line)
     return render_template('index.html', csv_data=info)
 
 
