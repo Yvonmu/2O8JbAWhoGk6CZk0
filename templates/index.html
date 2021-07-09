@@ -1,0 +1,24 @@
+ <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                    <th>username</th>
+                    <th>date</th>
+                    <th>tweet</th>
+                    <th>likes_count</th>
+                    <th>retweets_count</th>
+                    <th>replies_count</th>
+                </tr>
+              </thead>
+              <tbody>
+<!--            {% for value in csv_data %}-->
+                <tr>
+                    <td>{{ csv_data[0] }}</td>
+                    <td>{{ csv_data[1] }}</td>
+                    <td>{{ csv_data[2] }}</td>
+                    <td>{{ csv_data[3] }}</td>
+                    <td>{{ csv_data[4] }}</td>
+                    <td>{{ csv_data[5] }}</td>
+                </tr>
+<!--            {% endfor %}-->
+          </tbody>
+ </table>
