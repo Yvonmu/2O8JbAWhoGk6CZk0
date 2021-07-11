@@ -30,3 +30,8 @@ c.Output = search_key + ".csv"
 twint.run.Search(c)
 
 ```
+## To view in web app
+![Screenshot_20210711_112549](https://user-images.githubusercontent.com/69175754/125189954-08971900-e23b-11eb-9852-f6933ca101e4.png)
+
+
+
