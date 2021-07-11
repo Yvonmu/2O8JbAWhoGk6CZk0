@@ -1,5 +1,5 @@
 # 2O8JbAWhoGk6CZk0
-##searches Twitter for the term request for startup
+## searches Twitter for the term request for startup
 This is a software that searches Twitter for the term "request for startup" and extracts information, in other words tweets, then stores this information in a very simple file format, such as a CSV file or a simple text file, and displays results in a simple web interface. It Sort by total number of retweets, likes, and discussions and then date in descending order.
 
 ## Setup
@@ -8,10 +8,10 @@ TWINT - Twitter Intelligence Tool [click here link](https://github.com/twintproj
 
 You might want to edit twint/tweet.py adding your field, and twint/storage/write_meta.py to let it be saved into the output file
 
-##Install Flask
+## Install Flask
 [click here link](https://phoenixnap.com/kb/install-flask)
 
-##Example
+## Example
 twint help us to search for term on twitter
 ```
 import twint
