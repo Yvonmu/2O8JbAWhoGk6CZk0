@@ -30,6 +30,25 @@ c.Output = search_key + ".csv"
 twint.run.Search(c)
 
 ```
+## Error handling
+In case you got an error like this ```File "~/(Project name)/venv/lib/python3.8/site-packages/twint/format.py", line 23, in Tweet
+    output = output.replace("{replies}", t.replies_count)
+TypeError: replace() argument 2 must be str, not int```
+go in twint/format.py and change
+```
+output = output.replace("{replies}", t.replies_count)
+output = output.replace("{retweets}", t.retweets_count)
+output = output.replace("{likes}", t.likes_count)
+output = output.replace("{mentions}", ",".join(t.mentions))
+```
+to 
+```
+output = output.replace("{replies}", str(t.replies_count))
+output = output.replace("{retweets}", str(t.retweets_count))
+output = output.replace("{likes}", str(t.likes_count))
+output = output.replace("{mentions}", ",".join(str(t.mentions)))
+```
+Then you are good to go :)
 ## To view in web app
 ![Screenshot_20210711_112549](https://user-images.githubusercontent.com/69175754/125189954-08971900-e23b-11eb-9852-f6933ca101e4.png)
 
